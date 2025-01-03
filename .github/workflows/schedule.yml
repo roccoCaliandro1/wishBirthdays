@@ -21,6 +21,11 @@ jobs:
 
       - name: Compile and run the program
         run: |
+          # Create the bin directory for compiled classes
           mkdir -p bin
-          javac -d bin src/com/rocco/birthdays/WishBirthdays.java
-          java -cp bin com.rocco.birthdays.WishBirthdays
+
+          # Compile the Java files and include JAR files in the classpath
+          javac -d bin -cp "libs/*" src/com/rocco/birthdays/WishBirthdays.java
+
+          # Run the Java program, including JAR files in the classpath
+          java -cp "bin:libs/*" com.rocco.birthdays.WishBirthdays

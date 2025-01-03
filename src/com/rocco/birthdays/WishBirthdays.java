@@ -5,7 +5,11 @@ public class WishBirthdays {
 		System.out.println("Happy Birthday Rocco!");
 
 
-		MailSender.sendEmail("wish.birthday@libero.it", "17sMauzJeJJYp2pC", new String[] {"rockdesires@gmail.com"}, "Subject",  "I would like to wish you an happy birthday");
+		MailSender.sendEmail("wish.birthday@libero.it", 
+				"17sMauzJeJJYp2pC", 
+				new String[] {"rockdesires@gmail.com"}, 
+				"Subject",  
+				"I would like to wish you an happy birthday");
 
 	}
 }
