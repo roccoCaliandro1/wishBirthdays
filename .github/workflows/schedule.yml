@@ -25,7 +25,7 @@ jobs:
           mkdir -p bin
 
           # Compile the Java files and include JAR files in the classpath
-          javac -d bin -cp "libs/*" src/com/rocco/birthdays/WishBirthdays.java
+          javac -d bin -cp "libs/*" src/com/rocco/birthdays/*.java
 
           # Run the Java program, including JAR files in the classpath
           java -cp "bin:libs/*" com.rocco.birthdays.WishBirthdays
