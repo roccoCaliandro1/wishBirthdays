@@ -2,7 +2,8 @@ name: Daily Birthday Wish
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # This runs at 8 AM UTC every day
+    - cron: '0 8 * * *'  # Runs every day at 8 AM UTC
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   build:
