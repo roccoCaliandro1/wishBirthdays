@@ -13,11 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up JDK 11
+      - name: Set up JDK 11 (Zulu)
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'openjdk'  # Use OpenJDK distribution
+          distribution: 'zulu'  # Use Zulu OpenJDK distribution
 
       - name: Compile and run the program
         run: |
